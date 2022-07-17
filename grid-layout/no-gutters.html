@@ -9,13 +9,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/grid-layout/css/grid-basic.css">
 
-    <title>Hello, world!</title>
+    <title>Class no-gutters - xóa padding giữa các col</title>
 </head>
 
 <body>
-    <h1>File đã cài đặt Bootstrap - Bấm Ctrl + U để xem source code</h1>
-
+    <div class="container style-grid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Xóa padding giữa các cột (col)</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 bg-info">
+                <div class="bg-secondary">
+                    Cột A
+                </div>
+            </div>
+            <div class="col-md-4 bg-info">
+                <div class="bg-secondary">
+                    Cột B
+                </div>
+            </div>
+        </div>
+        <!-- mt-3 là class magrin-top = 3px trong bootstrap -->
+        <div class="row no-gutters mt-3">
+            <div class="col-md-8 bg-info">
+                <div class="bg-secondary">
+                    Cột A
+                </div>
+            </div>
+            <div class="col-md-4 bg-info">
+                <div class="bg-secondary">
+                    Cột B
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
