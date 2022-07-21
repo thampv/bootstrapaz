@@ -1,0 +1,6 @@
+
+/* selector lựa chọn những class bắt đầu với "col" */
+.style-grid [class^="col"] {
+    background: #ccc;
+    border: 1px solid #ddd;
+}
