@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Display Setting Class Group In Bootstrap</title>
+</head>
+
+<body>
+    <style>
+        .margin-top-20px {
+            margin-top: 20px;
+        }
+    </style>
+    <div class="container text-center bg-light">
+        <h1 class="text-primary">Display Bootstrap</h1>
+        <a class="text-center" href="https://getbootstrap.com/docs/4.6/utilities/display/">
+            <h3>Xem đầy đủ về class Display trên Bootstrap tại đây</h3>
+        </a>
+        <div class="row margin-top-20px">
+            <div class="col-md-12">
+                <h4 class="text-info text-justify">Mặc định với display = Block - mỗi Block chiếm trọn không gian một dòng</h4>
+                <div class="bg-dark p-1 text-light">Box 1</div>
+                <div class="bg-primary p-1 text-light">Box 2</div>
+            </div>
+        </div>
+        <div class="row margin-top-20px">
+            <div class="col-md-12">
+                <h4 class="text-info text-justify">Display = d-inline - các Block sẽ hiển thị trên cùng một dòng</h4>
+                <div class="bg-dark p-1 text-light d-inline">Box 1</div>
+                <div class="bg-primary p-1 text-light d-inline">Box 2</div>
+            </div>
+        </div>
+        <div class="row margin-top-20px">
+            <div class="col-md-12">
+                <h4 class="text-info text-justify">Display = d-inline-block - các Block sẽ hiển thị trên cùng một dòng - tác động được vào padding, height, width</h4>
+                <div class="bg-dark p-1 text-light d-inline">Box 1</div>
+                <div class="bg-primary p-1 text-light d-inline">Box 2</div>
+            </div>
+        </div>
+        <div class="row margin-top-20px">
+            <div class="col-md-12">
+                <h3 class="text-secondary">Display cho tất cả các thiết bị</h3>
+                <h4 class="text-info text-justify">Display: ẩn Box 1 đối với kích thước màn hình extra small, hiện đối với màn hình medium</h4>
+                <div class="bg-dark p-1 text-light d-none d-md-block">Box 1</div>
+                <div class="bg-primary p-1 text-light">Box 2</div>
+                <div class="bg-success p-1 text-light">Box 3</div>
+                <div class="bg-warning p-1 text-light">Box 4</div>
+            </div>
+        </div>
+        <div class="row margin-top-20px">
+            <div class="col-md-12">
+                <h3 class="text-secondary">Display cho tất cả các thiết bị</h3>
+                <h4 class="text-info text-justify">Display: ẩn Box 1 đối với kích thước màn hình extra small, hiện Box 2 với màn hình small, hiện Box 1 đối với màn hình medium</h4>
+                <!-- Ẩn box 1 đối với tất cả các kích thước màn hình, trừ màn hình >= medium -->
+                <div class="bg-dark p-1 text-light d-none d-md-block">Box 1</div>
+                <!-- Ẩn box 2 đối với tất cả các kích thước màn hình, trừ màn hình >= small -->
+                <div class="bg-primary p-1 text-light d-none d-sm-block">Box 2</div> 
+                <div class="bg-success p-1 text-light">Box 3</div>
+                <div class="bg-warning p-1 text-light">Box 4</div>
+            </div>
+        </div>
+        <div class="row margin-top-20px">
+            <div class="col-md-12">
+                <h3 class="text-secondary">Display cho tất cả các thiết bị</h3>
+                <h4 class="text-info text-justify">Display: Box 3 chỉ hiển thị ở kích thước màn hình từ >=768px đến nhỏ hơn 992px</h4>
+                <div class="bg-dark p-1 text-light">Box 1</div>
+                <div class="bg-primary p-1 text-light">Box 2</div> 
+                <div class="bg-success p-1 text-light d-none d-md-block d-lg-none">Box 3</div>
+                <div class="bg-warning p-1 text-light">Box 4</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
